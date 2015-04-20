@@ -41,7 +41,7 @@ class UsersControllerTest < ActionController::TestCase
 
   test '#logout' do
     get :logout
-    #assert_redirect_to root_path
+    assert_redirected_to root_path
   end
 
   test '#clearData' do
